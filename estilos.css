@@ -1,1 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
 
+}
+
+header nav{
+    text-align: right;
+}
+
+nav a{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(52, 92, 120); 
+
+    
+}
+
+.espacio{
+    margin: 25px;
+}
+
+.letra{
+    font-family: 'Cabin' , arial, sans-serif ;
+    font-weight: bold;
+    color: grey; 
+}
