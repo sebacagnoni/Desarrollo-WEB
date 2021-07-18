@@ -113,15 +113,85 @@ nav a{
 
   /*GRILLA GAMING*/
 
-  .grilla{
+
+
+
+.grilla{
       display: grid;
-      grid-template-columns: 3fr 3fr;
-      grid-template-rows: 3fr 1fr 2fr;
+      grid-template-areas: 
+      "area1 area1 area2 area2"
+      "area3 area3 area3 area3"
+      "img1  img2  img3  img4 ";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 3fr 1fr 1fr;
+      grid-row-gap: 20px;
+      grid-column-gap: 15px;
   }
 
-  section div{
+#area1{
+      grid-area: area1;
+      background-color: pink;
+
+  }
+
+#area2{
+      grid-area: area2;
+      background-color: red;
+  }
+
+#area3{
+      grid-area: area3;
+      background-color: green;
+
+  }
+
+#area4{
+      grid-area: img1;
+      background-color: indigo;
+  }
+
+#area5{
+    grid-area: img2;
+    background-color: yellow;
+}
+
+
+#area6{
+    grid-area: img3;
+    background-color: orange;
+}
+
+
+#area7{
+    grid-area: img4;
+    background-color: orangered;
+}
+
+
+section div{
       background-color: rgb(52, 92, 120);
       padding: 5px;
       border: 1px solid black;
 
-  }
+}
+
+.tamanioImg{
+    width: 200px;
+    height: 350px;
+}
+
+#imgGrande{
+    width: 500px;
+    height: 450px;
+}
+
+
+/*Carousel*/
+#imagenCarousel{
+    width: 80%;
+    height: 100%;
+}
+
+#imagenFondo{
+    background-color: rgb(177, 165, 165);
+}

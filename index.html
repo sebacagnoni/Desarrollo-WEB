@@ -14,24 +14,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap Local -->
+    <link rel="stylesheet" href="./bs/css/bootstrap.css">
+    
 
 </head>
 <body>
-    <header>
-        <img src="img/logos/headphoneslogo.png" alt="">
-        <nav class = "espacio letra">
-            <a href="index.html">Inicio</a> 
-            <a href="quebuscas.html">¿Qué buscas?</a>
-            <a href="Quienesomos.html">Quienes somos</a>
 
-            
-        </nav>
-        </div>
+
+    <header>
+      <img src="img/logos/headphoneslogo.png" alt="">
+      <nav class = "espacio letra">
+          <a href="index.html">Inicio</a> 
+          <a href="quebuscas.html">¿Qué buscas?</a>
+          <a href="Quienesomos.html">Quienes somos</a>
+
+          
+      </nav>
+      </div>
     </header>
 
+      <!--Carrusel-->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id = "imagenCarousel" src="img/imagenes/studio.jpeg" alt="Auriculares de todos los estilos">
+          </div>
+          <div class="carousel-item">
+            <img id = "imagenCarousel" src="img/imagenes/gaming.jpeg" alt="Gaming">
+          </div>
+          <div class="carousel-item">
+            <img id = "imagenCarousel" src="img/imagenes/outside.jpg" alt="Sport">
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+  <!--Carrusel-->
+
+
+
+       
+
     <!--*********************Middle section*********************-->
+    
+    
+
     <hr>
-    <img src="img/imagenes/auricularesbig.jpg" width="100%" height= "750">
+    
     <main id = "alineadoCentro">
         <h1>La música en tus manos</h1>
         <p> Los auriculares son uno de los accesorios tecnológicos 
@@ -44,7 +90,7 @@
     <hr>
         <div class = "padre-flex">
 
-            <article><img src="img/imagenes/gamingcuadro.jpg">
+            <article><a href="gaming.html"><img src="img/imagenes/gamingcuadro.jpg"></a>
                 <h3>Headphones for Gaming</h3>
             </article>
             <article><img src="img/imagenes/sportcuadro.jpg">
@@ -92,6 +138,12 @@
         <a href="#" class="fa fa-google"></a>
         </article>
      </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
