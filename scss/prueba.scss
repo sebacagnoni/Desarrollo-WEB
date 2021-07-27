@@ -1,0 +1,181 @@
+@import "responsive";
+//el archivo importable debe ir precedido de _
+
+//Comentario en SASS
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-family: 'Roboto Condensed';
+}
+
+nav{
+    text-align: right;
+    a{
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(52, 92, 120); 
+    }
+    
+}
+
+
+
+
+.espacio{
+    margin: 25px;
+}
+
+.letra{
+    font-family: 'Cabin' , arial, sans-serif ;
+    font-weight: bold;
+    
+}
+
+#alineadoCentro{
+    text-align: center;
+    
+    padding: 5px 10px 12px 15px;
+    background-color: grey;
+    border: solid 3px;
+    
+    
+}
+
+
+.padre-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.padre-flexBottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.parrafo-expertos{
+    margin: 15px;
+    padding: 15px;
+    font-size: large;
+
+}
+
+
+
+#linkEmpezar{
+    text-decoration: none;
+    color: rgb(52, 92, 120); 
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  #colorFooter{
+      background-color: coral;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+
+  
+
+  /*GRILLA GAMING*/
+
+
+
+//Preguntar al profesor por qué esta mal configurado
+.grilla{
+      display: grid;
+      grid-template-areas: 
+      "area1 area1 area2 area2"
+      "area3 area3 area3 area3"
+      "img1  img2  img3  img4 ";
+      grid-template-columns: 4fr 4fr 3fr 3fr;
+      grid-template-rows: 4fr 1fr 1fr;
+      grid-row-gap: 20px;
+      grid-column-gap: 15px;
+  }
+
+@for $i from 1 through 7{
+    #area#{$i}{
+        grid-area:  area#{$i};
+        background-color: grey;
+
+    }
+}
+
+
+
+
+
+section{ 
+    div{
+      background-color: rgb(52, 92, 120);
+      padding: 5px;
+      border: 1px solid black;
+    }
+
+}
+
+.tamanioImg{
+    width: 200px;
+    height: 350px;
+}
+
+#imgGrande{
+    width: 500px;
+    height: 450px;
+}
+
+//Preguntar como hacer para que aparezcan los puntitos del carrousel para desplazarse
+/*Carousel*/
+#imagenCarousel{
+    width: 80%;
+    height: 100%;
+}
+
+#imagenFondo{
+    background-color: rgb(177, 165, 165);
+}
+
+
+//Music
+
+
+
