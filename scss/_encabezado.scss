@@ -1,0 +1,128 @@
+
+/*Indice*/
+nav{
+    text-align: right;
+    a{
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(52, 92, 120); 
+    }
+    
+}
+
+
+.espacio{
+    margin: 25px;
+}
+
+.letra{
+    font-family: 'Cabin' , arial, sans-serif ;
+    font-weight: bold;
+    
+}
+
+
+//FOOTER
+/*Footer*/
+
+
+
+#linkEmpezar{
+    text-decoration: none;
+    color: rgb(52, 92, 120); 
+}
+
+//Botones facebook, twiter, google
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+
+  .parrafo-expertos{
+    margin: 15px;
+    padding: 15px;
+    font-size: large;
+
+}
+
+//FIN Botones facebook, twiter, google
+//Footer
+  #colorFooter{
+      background-color: coral;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+
+
+
+#link{
+    color: black;
+    text-decoration: None;
+}  
+
+#textoCentrado{
+    text-align: center;
+}
+
+.fondoDegradeGris{
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255) , rgb(143, 142, 142));
+}
+
+#fondoGris{
+    background-color: rgb(145, 142, 142);
+}
+
+.imagenBack{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/imagenes/fondoheadphone.jpg");
+    background-size: cover;
+    
+    
+}
+
+#desenfoque{
+    filter: blur(10px);
+}
+
+#quienesSomos{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #3B5998;
+    opacity: 0.85;
+    text-align: center;
+    padding: 5px 10px 12px 15px;
+    color:White;
+    padding-top: 100px;
+    vertical-align: middle;
+    
+}
+

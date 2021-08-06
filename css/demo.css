@@ -1,10 +1,59 @@
-* {
-  margin: 0;
-  padding: 0; }
+/*GRILLA GAMING Y MUSIC*/
+#area1 {
+  grid-area: area1;
+  background-image: linear-gradient(to bottom, #9c9c9c, #ece9e9);
+  justify-content: center;
+  text-align: left; }
 
-html {
-  font-family: 'Roboto Condensed'; }
+#area2 {
+  grid-area: area2;
+  background-image: linear-gradient(to bottom, #9c9c9c, #ece9e9);
+  justify-content: center;
+  text-align: left; }
 
+#area3 {
+  grid-area: area3;
+  background-image: linear-gradient(to bottom, #9c9c9c, #ece9e9);
+  justify-content: center;
+  text-align: left; }
+
+.grilla {
+  display: grid;
+  grid-template-areas: "area1 area1 area2 area2" "area3 area3 area3 area3";
+  grid-template-columns: 450px 450px 250px 150px;
+  grid-template-rows: 600px 100px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px; }
+
+#area2 {
+  padding-top: 100px;
+  vertical-align: middle; }
+
+#area4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
+
+.flex-container {
+  display: flex;
+  justify-content: center; }
+
+.flex-child:hover {
+  opacity: 0.7;
+  flex: 1;
+  border: 2px solid #808080;
+  height: 350px; }
+
+.flex-child:first-child {
+  margin-right: 20px; }
+
+.amitadDePantalla {
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; }
+
+/*Indice*/
 nav {
   text-align: right; }
   nav a {
@@ -19,28 +68,7 @@ nav {
   font-family: 'Cabin' , arial, sans-serif;
   font-weight: bold; }
 
-#alineadoCentro {
-  text-align: center;
-  padding: 5px 10px 12px 15px;
-  background-color: grey;
-  border: solid 3px; }
-
-.padre-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-.padre-flexBottom {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center; }
-
-.parrafo-expertos {
-  margin: 15px;
-  padding: 15px;
-  font-size: large; }
-
+/*Footer*/
 #linkEmpezar {
   text-decoration: none;
   color: #345c78; }
@@ -68,6 +96,11 @@ nav {
   background: #dd4b39;
   color: white; }
 
+.parrafo-expertos {
+  margin: 15px;
+  padding: 15px;
+  font-size: large; }
+
 #colorFooter {
   background-color: coral;
   display: flex;
@@ -75,42 +108,64 @@ nav {
   flex-wrap: nowrap;
   justify-content: center; }
 
-/*GRILLA GAMING*/
-.grilla {
-  display: grid;
-  grid-template-areas: "area1 area1 area2 area2" "area3 area3 area3 area3" "img1  img2  img3  img4 ";
-  grid-template-columns: 4fr 4fr 3fr 3fr;
-  grid-template-rows: 4fr 1fr 1fr;
-  grid-row-gap: 20px;
-  grid-column-gap: 15px; }
+#link {
+  color: black;
+  text-decoration: None; }
 
-#area1 {
-  grid-area: area1;
-  background-color: grey; }
+#textoCentrado {
+  text-align: center; }
 
-#area2 {
-  grid-area: area2;
-  background-color: grey; }
+.fondoDegradeGris {
+  background-image: linear-gradient(to bottom, white, #8f8e8e); }
 
-#area3 {
-  grid-area: area3;
-  background-color: grey; }
+#fondoGris {
+  background-color: #918e8e; }
 
-#area4 {
-  grid-area: area4;
-  background-color: grey; }
+.imagenBack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/imagenes/fondoheadphone.jpg");
+  background-size: cover; }
 
-#area5 {
-  grid-area: area5;
-  background-color: grey; }
+#desenfoque {
+  filter: blur(10px); }
 
-#area6 {
-  grid-area: area6;
-  background-color: grey; }
+#quienesSomos {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: #3B5998;
+  opacity: 0.85;
+  text-align: center;
+  padding: 5px 10px 12px 15px;
+  color: White;
+  padding-top: 100px;
+  vertical-align: middle; }
 
-#area7 {
-  grid-area: area7;
-  background-color: grey; }
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Roboto Condensed'; }
+
+#alineadoCentro {
+  text-align: center;
+  padding: 5px 10px 12px 15px;
+  background-color: grey;
+  border: solid 3px; }
+
+.padre-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.padre-flexBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
 
 section div {
   background-color: #345c78;
@@ -122,8 +177,8 @@ section div {
   height: 350px; }
 
 #imgGrande {
-  width: 500px;
-  height: 450px; }
+  width: 900;
+  height: 600; }
 
 /*Carousel*/
 #imagenCarousel {
@@ -132,3 +187,10 @@ section div {
 
 #imagenFondo {
   background-color: #b1a5a5; }
+
+.animado:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.letraGrande {
+  font-size: 25px; }
